@@ -296,7 +296,7 @@ Samuel MBUMBU
 
 Étudiant en Informatique
 
-Université Pédagogique Nationale (UPN)
+Université Protestante au Congo (UPC)
 
 Projet académique de Data Science et Développement Web
 
