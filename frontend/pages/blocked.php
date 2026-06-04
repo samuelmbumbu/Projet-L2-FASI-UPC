@@ -1,0 +1,5 @@
+<?php require_once '../../backend-php/middleware/authMiddleware.php'; ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Transactions bloquées - SyAnFraud</title><?php include '../components/header.php'; ?></head>
+<body><div class="app-shell"><?php include '../components/sidebar.php'; ?><main class="main"><div class="page-title"><h2>Transactions bloquées</h2><p><?= isAdmin() ? 'Liste combinée des transactions bloquées des clients avec traitement admin.' : 'Vos transactions refusées à cause d’un score de fraude élevé.' ?></p></div><br><?php if(isset($_GET['treated'])): ?><div class="alert success">Alerte traitée avec succès.</div><?php endif; ?><section class="card"><div class="table-wrap"><table id="blockedTable"><thead><tr><th>Client</th><th>Montant</th><th>Type</th><th>Bénéficiaire</th><th>Risque</th><th>Pourquoi bloquée ?</th><th>Traitement</th><th>Date</th></tr></thead><tbody></tbody></table></div></section></main></div><?php include '../components/footer.php'; ?></body></html>

@@ -1,0 +1,3 @@
+<?php require_once '../../backend-php/middleware/authMiddleware.php'; ?>
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Carte des flux - SyAnFraud</title><?php include '../components/header.php'; ?></head>
+<body><div class="app-shell"><?php include '../components/sidebar.php'; ?><main class="main"><div class="page-title"><h2>Carte des flux</h2><p>Visualisation simplifiée des flux entre clients et bénéficiaires.</p></div><br><section class="card"><div id="flowList" class="flow-list"></div></section></main></div><?php include '../components/footer.php'; ?><script src="../js/flowmap.js"></script></body></html>

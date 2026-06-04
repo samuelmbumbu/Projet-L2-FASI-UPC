@@ -1,0 +1,8 @@
+<?php
+session_start();
+if (isset($_SESSION['user_id'])) {
+    header('Location: frontend/pages/dashboard.php');
+} else {
+    header('Location: frontend/pages/index.php');
+}
+exit;
