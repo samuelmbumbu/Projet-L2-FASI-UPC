@@ -149,11 +149,11 @@ if ($tempsValidation > 0 && $tempsValidation < 1) {
 }
 
 if ($tempsValidation > 10 && $tempsValidation < 15) {
-    $scoreRegles += 35;
+    $scoreRegles += 20;
     $raisons[] = 'validation PIN trop lente';
 }
 if ($tempsValidation >= 15) {
-    $scoreRegles += 45;
+    $scoreRegles += 30;
     $raisons[] = 'temps extrêmement long de validation PIN';
 }
 
